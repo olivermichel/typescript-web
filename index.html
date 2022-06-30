@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebRTC Client</title>
+  <link rel="stylesheet" href="css/milligram.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+
+    <script src="node_modules/systemjs/dist/s.js"></script>
+    <script src="node_modules/systemjs/dist/extras/named-register.js"></script>
+    <script src="dist/js/app.js"></script>
+    <script type="module">
+      System.import("main").then((m) => {
+        m.main();
+      }, (e) => {
+        console.error("failed loading app: " + e.message);
+      });
+    </script>
+</body>
+</html>

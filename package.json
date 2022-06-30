@@ -1,0 +1,19 @@
+{
+  "name": "typescript-web",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "serve": "npx http-server .",
+    "watch": "npx tsc --watch"
+  },
+  "author": "Oliver Michel",
+  "license": "ISC",
+  "dependencies": {
+    "systemjs": "^6.12.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
+}
